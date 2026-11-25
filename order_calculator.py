@@ -29,6 +29,10 @@ class OrderCalculator:
 
         return round(total, 2)
 
+    def items_count(self) -> int:
+        """Возвращает количество позиций в заказе (добавлено в ЛР 1)."""
+        return len(self.items)
+
     def most_expensive_item(self) -> str:
         if not self.items:
             raise ValueError("Список товаров пуст.")
