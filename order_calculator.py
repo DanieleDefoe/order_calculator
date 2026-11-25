@@ -5,6 +5,7 @@ class OrderCalculator:
     DISCOUNT_THRESHOLD = 1000
     DISCOUNT_RATE = 0.1  # 10% скидка
     TEST_TEST = 0.2 #для второй лабы
+    MAX_ITEMS = 100  # для второй лабы
 
     def __init__(self, items: List[Dict[str, float]]):
         """
